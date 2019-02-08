@@ -71,8 +71,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="top-right">
 					<ul>
-						<li><a href="checkout.html">Checkout</a></li>
-						<li><a href="login.html">Talk to us</a></li>
+						<li><a href="{{route('checkout')}}">Checkout</a></li>
+						<li><a href="{{url('/login')}}">Talk to us</a></li>
 
 					</ul>
 					</div>
@@ -98,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="index.html" class="act">Home</a></li>
+									<li class="active"><a href="{{route('projects.index')}}" class="act">Home</a></li>
 									<!-- Mega Menu -->
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfect Matches<b class="caret"></b></a>
@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 										</ul>
 									</li>
-									<li><a href="codes.html">Ankara Handbags</a></li>
+									<li><a href="{{route('codes')}}">Ankara Handbags</a></li>
 									<li><a href="codes.html">Bakery</a></li>
 									<li><a href="{{route('mail_us')}}">Mail Us</a></li>
 

@@ -23,6 +23,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/codes', 'PagesController@codes')->name('codes');
+Route::get('/checkout', 'PagesController@codes')->name('checkout');
+
 
 
 Route::resource('projects','ProjectsController');

@@ -13,4 +13,16 @@ class PagesController extends Controller
     {
         return view('projects.mail');
     }
+
+
+    public function codes()
+    {
+        return view('projects.codes');
+    }
+
+
+    public function checkout()
+    {
+        return view('projects.checkout');
+    }
 }
