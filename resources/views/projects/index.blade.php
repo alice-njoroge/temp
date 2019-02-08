@@ -211,6 +211,35 @@
 				</div>
 
 			<!--new-arrivals-->
+
+
+
+			<div class="login">
+				<div class="main-agileits">
+					<div class="form-w3agile">
+						<h3>Give us Your Feedback</h3>
+						<form action="#" method="post">
+							<div class="key">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<input  type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<div class="clearfix"></div>
+							</div>
+							<div class="key">
+								<textarea rows="5" cols="60">
+									Enter text here...
+									</textarea>
+
+								<div class="clearfix"></div>
+							</div>
+							<input type="submit">
+						</form>
+					</div>
+					<div class="forg">
+	
+					<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
 				<!--accessories-->
 			<div class="accessories-w3l">
 				<div class="container">
