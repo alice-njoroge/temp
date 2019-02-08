@@ -10,7 +10,7 @@
 <!--css-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="New Shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="New Shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					var val = Math.random();
 					starbox.next().text(' '+val);
 					return val;
-					} 
+					}
 				})
 			});
 		});
@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul>
 						<li><a href="checkout.html">Checkout</a></li>
 						<li><a href="login.html">Talk to us</a></li>
-						
+
 					</ul>
 					</div>
 					<div class="clearfix"></div>
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="container">
 					<div class="logo-nav">
 						<div class="logo-nav-left">
-							<h1><a href="index.html">ANKARA <span>Shop anywhere</span></a></h1>
+							<h1><a href="{{route('projects.index')}}">ANKARA <span>Shop anywhere</span></a></h1>
 						</div>
 						<div class="logo-nav-left1">
 							<nav class="navbar navbar-default">
@@ -95,10 +95,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-							</div> 
+							</div>
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="index.html" class="act">Home</a></li>	
+									<li class="active"><a href="index.html" class="act">Home</a></li>
 									<!-- Mega Menu -->
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfect Matches<b class="caret"></b></a>
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</div>
 												<div class="col-sm-3  multi-gd-img">
 														<a href="products.html"><img src="images/woo.jpg" alt=" "/></a>
-												</div> 
+												</div>
 												<div class="col-sm-3  multi-gd-img">
 														<a href="products.html"><img src="images/woo1.jpg" alt=" "/></a>
 												</div>
@@ -164,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</div>
 												<div class="col-sm-3  multi-gd-img">
 														<a href="products1.html"><img src="images/woo3.jpg" alt=" "/></a>
-												</div> 
+												</div>
 												<div class="col-sm-3  multi-gd-img">
 														<a href="products1.html"><img src="images/woo4.jpg" alt=" "/></a>
 												</div>
@@ -174,8 +174,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</li>
 									<li><a href="codes.html">Ankara Handbags</a></li>
 									<li><a href="codes.html">Bakery</a></li>
-									<li><a href="\projects\mail">Mail Us</a></li>
-                                    
+									<li><a href="{{route('mail_us')}}">Mail Us</a></li>
+
 								</ul>
 							</div>
 							</nav>
@@ -188,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<form action="#" method="post">
 									<input name="Search" type="search" placeholder="Search...">
 								</form>
-							</div>	
+							</div>
 						</div>
 						<div class="header-right2">
 							<div class="cart box_1">
@@ -200,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</a>
 								<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 								<div class="clearfix"> </div>
-							</div>	
+							</div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -208,43 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!--header-->
-		<!--banner-->
-		<div class="banner-w3">
-			<div class="demo-1">            
-				<div id="example1" class="core-slider core-slider__carousel example_1">
-					<div class="core-slider_viewport">
-						<div class="core-slider_list">
-							<div class="core-slider_item">
-								<img src="images/b1.jpg" class="img-responsive" alt="">
-							</div>
-							 <div class="core-slider_item">
-								 <img src="images/b2.jpg" class="img-responsive" alt="">
-							 </div>
-							<div class="core-slider_item">
-								  <img src="images/b3.jpg" class="img-responsive" alt="">
-							</div>
-							<div class="core-slider_item">
-								  <img src="images/b4.jpg" class="img-responsive" alt="">
-							</div>
-						 </div>
-					</div>
-					<div class="core-slider_nav">
-						<div class="core-slider_arrow core-slider_arrow__right"></div>
-						<div class="core-slider_arrow core-slider_arrow__left"></div>
-					</div>
-					<div class="core-slider_control-nav"></div>
-				</div>
-			</div>
-			<link href="css/coreSlider.css" rel="stylesheet" type="text/css">
-			<script src="js/coreSlider.js"></script>
-			<script>
-			$('#example1').coreSlider({
-			  pauseOnHover: false,
-			  interval: 3000,
-			  controlNavEnabled: true
-			});
-
-			</script>
+		
         <!---content--->
 @yield('content')
 
@@ -287,12 +251,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">Nyeri, Kenya</a></li>
 										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">0712026521</a></li>
 										<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:brauogarcia5@gmail.com"> brauogarcia5@gmail.com</a></li>
-										
+
 									</ul>
 								</div>
 							<div class="clearfix"> </div>
 							</div>
-							
+
 						</div>
 					</div>
 					<!---footer--->
@@ -313,7 +277,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body">
 							<div class="news-gr">
@@ -336,8 +300,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 											<div class="color-quality-right">
 												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
+												<div class="quantity">
+													<div class="quantity-select">
 														<div class="entry value-minus1">&nbsp;</div>
 														<div class="entry value1"><span>1</span></div>
 														<div class="entry value-plus1 active">&nbsp;</div>
@@ -377,7 +341,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body">
 							<div class="news-gr">
@@ -400,8 +364,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 											<div class="color-quality-right">
 												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
+												<div class="quantity">
+													<div class="quantity-select">
 														<div class="entry value-minus1">&nbsp;</div>
 														<div class="entry value1"><span>1</span></div>
 														<div class="entry value-plus1 active">&nbsp;</div>
@@ -441,7 +405,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body">
 							<div class="news-gr">
@@ -464,8 +428,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 											<div class="color-quality-right">
 												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
+												<div class="quantity">
+													<div class="quantity-select">
 														<div class="entry value-minus1">&nbsp;</div>
 														<div class="entry value1"><span>1</span></div>
 														<div class="entry value-plus1 active">&nbsp;</div>
@@ -505,7 +469,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body">
 							<div class="news-gr">
@@ -528,8 +492,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 											<div class="color-quality-right">
 												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
+												<div class="quantity">
+													<div class="quantity-select">
 														<div class="entry value-minus1">&nbsp;</div>
 														<div class="entry value1"><span>1</span></div>
 														<div class="entry value-plus1 active">&nbsp;</div>

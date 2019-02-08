@@ -26,3 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('projects','ProjectsController');
+
+Route::get('/mail-us', 'PagesController@mailUs')->name('mail_us');
