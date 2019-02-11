@@ -30,5 +30,6 @@ Route::get('/checkout', 'PagesController@codes')->name('checkout');
 Route::resource('projects', 'ProjectsController');
 
 Route::get('/mail-us', 'PagesController@mailUs')->name('mail_us');
+Route::post('/mail', 'MailsController@store')->name('mails');
 
 Route::post('/send-feedback', 'FeedbackController@sendFeedBack')->name('send_feedback');
